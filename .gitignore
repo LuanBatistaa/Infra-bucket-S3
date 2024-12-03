@@ -1,43 +1,27 @@
-# local terraform directories and files
-.terraform
-.terraform.lock.hcl
+# Diretórios do Terraform
+.terraform/
 
-# Ignorar o arquivo terraform-provider-aws_v5.0.0_x5.exe
-.terraform/providers/registry.terraform.io/hashicorp/aws/5.0.0/windows_386/terraform-provider-aws_v5.0.0_x5.exe
+# Arquivo de bloqueio do Terraform (não deve ser versionado)
+terraform.lock.hcl
 
-# .tfstate files
+# Arquivos de estado do Terraform
 *.tfstate
 *.tfstate.*
 
-# Crash log files
+# Arquivos de log de falha
 crash.log
 crash.*.log
 
-*.pem
-
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version
-# control as they are data points which are potentially sensitive and subject
-# to change depending on the environment.
+# Arquivos de variáveis, que podem conter dados sensíveis
 *.tfvars
 *.tfvars.json
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
-
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
-
-# Ignore CLI configuration files
+# Arquivos de configuração de CLI
 .terraformrc
 terraform.rc
 
-# IDE files
-.idea
+# Arquivos de configuração da IDE
+.idea/
+
+# Arquivos de chaves privadas
+*.pem
