@@ -2,7 +2,7 @@
 .terraform/
 
 # Arquivo de bloqueio do Terraform (não deve ser versionado)
-terraform.lock.hcl
+.terraform.lock.hcl
 
 # Arquivos de estado do Terraform
 *.tfstate
